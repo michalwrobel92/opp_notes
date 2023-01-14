@@ -1,3 +1,12 @@
+def auto_factory(model, max_speed):
+    return {
+        'model': model,
+        'engine': False,
+        'speed': 0,
+        'max_speed': max_speed
+    }
+
+
 bmw = {
     'model': 'e46',
     'engine': False,
@@ -20,15 +29,6 @@ def start_engine(car):
 
     else:
         print('Silnik już był odpalony')
-
-
-def auto_factory(model, max_speed):
-    return {
-        'model': model,
-        'engine': False,
-        'speed': 0,
-        'max_speed': max_speed
-    }
 
 
 bmw = auto_factory('e46', 160)
